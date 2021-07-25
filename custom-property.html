@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Property</title>
+    <style>
+        :root {
+            --main-color: red;
+            --border-color: green;
+            --side-width: 200px;
+        }
+
+        h1 {
+            color: var(--main-color);
+            border: 2px solid var(--border-color);
+        }
+
+        p {
+            color: var(--main-color);
+            background-color: darkcyan;
+        }
+
+        h2 {
+            color: var(--main-color);
+        }
+
+        .side-nav,
+        .blogs {
+            float: left;
+            height: 200px;
+            width: 300px;
+        }
+
+        aside {
+            background-color: maroon;
+            width: calc(100% - 10*200px);
+        }
+
+        .blogs {
+            background-color: #5467;
+            width: 200px;
+        }
+
+        footer {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>I am exploring Custom Property</h1>
+    </header>
+    <main>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero minus adipisci qui, similique sequi
+            inventore commodi perferendis velit maxime voluptas.</p>
+        <section>
+            <aside class="side-nav">
+                Side navigation
+            </aside>
+            <div class="blogs">
+                <h4>Blogs</h4>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2><small>copyright
+            </small></h2>
+    </footer>
+</body>
+
+</html>
