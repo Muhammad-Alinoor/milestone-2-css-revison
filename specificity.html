@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The last style of h1 will be shown in the site. */
+        h1 {
+            color: rgb(141, 89, 10);
+        }
+
+        h1 {
+            color: blueviolet !important;
+            /*it will override all types of style because it has most priority.it is called bang important. */
+        }
+
+        h1 {
+            color: brown;
+        }
+
+        /* Second higher style is class style*/
+        .second-higer {
+            color: burlywood;
+        }
+
+        /* id's priority is more than class style */
+        #third-higer {
+            color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="second-higer">Specificity Experienced-1</h1>
+    <h1 id="third-higer" class="second-higer" style="color: darkblue;">Specificity Experienced-2</h1>
+    <!-- inline style attribute has more priority than heading style  -->
+    <h1 class="second-higer">Specificity Experienced-3</h1>
+    <h1>Specificity Experienced-4</h1>
+    <h1>Specificity Experienced-5</h1>
+
+</body>
+
+</html>
